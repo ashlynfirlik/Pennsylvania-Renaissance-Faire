@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Metamorphous&display=swap');
+
+@layer reset, base, layout, components, utilities, overrides, print;
+
+@layer reset {
+    *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
+}
+
+@layer base {
+    :root {
+    --clr-primary: #783f3a;
+    --clr-background: #f2e4cd;
+    --clr-secondary: #e6d185;
+    --clr-tertiary: #464d6e;
+    --clr-text: #423734;
+
+    --font-sm: 1rem;
+    --font-md: 1.5rem;
+    --font-lg: 2rem;
+    --font-xl: 3.5rem;
+    --font-heading: 'Metamorphous', 'Georgia', serif;
+    --font-body: 'IM Fell English', 'Times New Roman', serif;
+    
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+    --space-xl: 4rem;
+
+    --radius-card: 8px;
+    --radius-button: 12px;
+
+    --focus-outline: 3px solid var(--clr-secondary);
+
+    --table-background: #e7d5b8;
+    --table-border: 1px solid #a59170;
+    }
+
+    body {
+        font-family: var(--font-body);
+        line-height: 1.6;
+        background-color: var(--clr-background);
+        color: var(--clr-text);
+    }
+
+    h1, h2, h3 {
+        font-family: var(--font-heading);
+    }
+
+    a {
+        color: var(--clr-primary);
+        text-decoration: none;
+    }
+}
+
+@layer layout {
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 var(--space-md);
+        width: 100%;
+    }
+}
+
+@layer components {
+    .home-header {
+        display: flex;
+        flex-direction: column;
+        padding: var(--space-lg) var(--space-md);
+    }
+
+    .site-name {
+        font-size: var(--font-xl);
+        color: var(--clr-primary);
+        margin-bottom: 0;
+    }
+
+    .tagline {
+        font-size: var(--font-md);
+    }
+
+    .main-nav-list {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: var(--space-xl);
+        flex-wrap: wrap
+    }
+
+    .main-nav-list a {
+        font-weight: bold;
+        font-size: var(--font-md);
+        background: var(--clr-tertiary);
+        color: var(--clr-background);
+        padding: var(--space-sm) var(--space-md);
+    }
+
+    .hero-image {
+        margin-top: var(--space-lg);
+        max-height: 500px;
+    }
+    
+    .gallery-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-lg);
+        padding: var(--space-md);
+        justify-content: center;
+    }
+
+    .schedule-table {
+        background-color: var(--table-background);
+        border: var(--table-border);
+        width: 100%;
+    }
+
+    .schedule-table th {
+        color: var(--clr-primary);
+        font-weight: bold;
+        padding: var(--space-md);
+    }
+
+    .schedule-table td {
+        padding: var(--space-md);
+        border-bottom: var(--table-border);
+    }
+
+    .tix-button {
+        display: inline-block;
+        padding: var(--space-md) var(--space-xl);
+        font-family: inherit;
+        font-size: var(--font-md);
+        border-radius: var(--radius-button);
+        background-color: var(--clr-tertiary);
+        color: var(--clr-background);
+        margin-top: var(--space-lg);
+    }
+
+    .tix-button-box {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer {
+        margin: var(--space-xl) 0;
+    }
+}
+
+@layer utilities {
+    .center-text {
+        text-align: center;
+    }
+
+    .center-items {
+        align-items: center;
+    }
+
+    .section-margin {
+        margin-top: var(--space-xl);
+    }
+
+    .main-nav-list a:hover {
+      background-color: var(--clr-primary);
+    }
+
+     .main-nav-list a[aria-current="page"] {
+    background-color: var(--clr-primary);
+    font-weight: bold;
+  }
+
+    .main-nav-list a[aria-current="page"]:hover {
+    background-color: var(--clr-text);
+  }
+
+  :focus-visible {
+        outline: var(--focus-outline);
+    }
+
+  .visually-hidden {
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    clip-path: inset(50%);
+  }
+}
+
+@layer overrides {
+
+}
+
+@layer print {
+    @media print {
+        .home-header, .hero-image {
+        display: none !important;
+        }
+    }
+}
