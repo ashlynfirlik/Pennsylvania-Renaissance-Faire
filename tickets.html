@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Renaissance Faire, Festival, Family Friendly, Activity, Manheim, Southern PA">
+    <meta name="description"
+        content="To provide a place to purchase tickets for the Pennsylvania Renaissance Faire.">
+    <meta name="author" content="Ashlyn Firlik">
+    <meta name="viewport" content="width=device-width">
+    <title>Tickets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="home-header">
+        <h1 class="site-name">Pennsylvania Renaissance Faire</h1>
+        <nav class="main-nav" aria-label="Main Site Navigation">
+            <ul class="main-nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artisans.html">Artisans</a></li>
+                <li><a href="#" aria-current="page">Tickets</a></li>
+                <li><a href="directions.html">Directions</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Faire Tickets</h2>
+        <section>
+            <h3>Ticket Info</h3>
+            <p>Placeholder text for the basic ticket info section of the tickets page. This section will go over how pricing works, how to purchase tickets, ticket return policy, and any other basic info that prepares the site visitor for purchasing tickets for the Pennsylvania Renaissance Faire.</p>
+        </section>
+        <section>
+            <h3>Sunset Ticket Admission</h3>
+            <p>Placeholder info about Sunset Ticket Admission, what it entails, and any other basic info to prepare the site visitor for purchasing a Sunset Admission ticket for the Pennsylvania Renaissance Faire.</p>
+        </section>
+        <section class="ticket-purchase-section">
+            <h2>Purchase Tickets</h2>
+            <p class="disclaimer">Disclaimer: Ticket prices and availability reflect the current season and are subject to change.</p>
+            <form action="#" method="POST" class="ticket-form">
+                <fieldset>
+                    <legend>Select Ticket Type</legend>
+                    <div class="form-group-radio">
+                        <input type="radio" id="type-regular" name="ticket_type" value="regular" checked>
+                        <label for="type-regular"><strong>Regular Day Pass</strong> (Access from 10:00 AM - 7:00 PM)</label>
+                    </div>
+                    <div class="form-group-radio">
+                        <input type="radio" id="type-sunset" name="ticket_type" value="sunset">
+                        <label for="type-sunset"><strong>Sunset Pass</strong> (Discounted access after 4:00 PM)</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Select Quantities</legend>
+                    <div class="form-group">
+                        <label for="ticket-adult">Adult Admission:</label>
+                        <input type="number" id="ticket-adult" name="ticket_adult" min="0" max="10" value="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="ticket-child">Child Admission (Ages 5-12):</label>
+                        <input type="number" id="ticket-child" name="ticket_child" min="0" max="10" value="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="ticket-date">Choose Date:</label>
+                        <input type="date" id="ticket-date" name="ticket_date" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div class="form-group">
+                        <label for="customer-name">Full Name:</label>
+                        <input type="text" id="customer-name" name="customer_name" required placeholder="First and Last Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="customer-email">Email Address:</label>
+                        <input type="email" id="customer-email" name="customer_email" required placeholder="yourname@example.com">
+                    </div>
+                </fieldset>
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">Checkout</button>
+                </div>
+            </form>
+        </section>
+        <h2>Workshop Tickets</h2>
+        <section>
+            <h2>Workshop Info</h2>
+            <p>Placeholder text for the workshop info section of the tickets page. This section will go over how pricing works and any other info that prepares the site visitor for purchasing workshop tickets at the Pennsylvania Renaissance Faire.</p>
+        </section>
+        <section class="workshop-registration-section">
+            <h2>Purchase Workshop Tickets</h2>
+            <p class="disclaimer">Disclaimer: Ticket prices and availability reflect the current season and are subject to change.</p>
+
+            <form action="#" method="POST" class="workshop-form">
+                <fieldset>
+                    <legend>Select Workshop</legend>
+                    <div class="form-group-radio">
+                        <input type="radio" id="workshop-option-1" name="workshop_choice" value="workshop_1" checked>
+                        <label for="workshop-option-1">Workshop #1</label>
+                    </div>
+                    <div class="form-group-radio">
+                        <input type="radio" id="workshop-option-2" name="workshop_choice" value="workshop_2">
+                        <label for="workshop-option-2">Workshop #2</label>
+                    </div>
+                    <div class="form-group-radio">
+                        <input type="radio" id="workshop-option-3" name="workshop_choice" value="workshop_3">
+                        <label for="workshop-option-3">Workshop #3</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Select Time Slot</legend>
+                    <div class="form-group">
+                        <label for="workshop-date">Choose Date:</label>
+                        <input type="date" id="workshop-date" name="workshop_date" required>
+                    </div>
+                    <div class="form-group-radio">
+                        <input type="radio" id="time-slot-1" name="workshop_time" value="time_1" checked>
+                        <label for="time-slot-1">Timeslot #1</label>
+                    </div>
+                    <div class="form-group-radio">
+                        <input type="radio" id="time-slot-2" name="workshop_time" value="time_2">
+                        <label for="time-slot-2">Timeslot #2</label>
+                    </div>
+                    <div class="form-group-radio">
+                        <input type="radio" id="time-slot-3" name="workshop_time" value="time_3">
+                        <label for="time-slot-3">Timeslot #3</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Select Quantities</legend>
+                    <div class="form-group">
+                        <label for="workshop-tickets">Workshop Ticket:</label>
+                        <input type="number" id="workshop-tickets" name="workshop_quantity" min="0" max="10" value="0">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div class="form-group">
+                        <label for="customer-name">Full Name:</label>
+                        <input type="text" id="ws-customer-name" name="ws-customer_name" required placeholder="First and Last Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="customer-email">Email Address:</label>
+                        <input type="email" id="ws-customer-email" name="ws-customer_email" required placeholder="yourname@example.com">
+                    </div>
+                </fieldset>
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">Checkout</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="center-text">
+        <p>Placeholder footer content for the Pennsylvania Renaissance Faire</p>
+    </footer>
+</body>
+
+</html>
