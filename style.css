@@ -119,7 +119,8 @@
         justify-content: center;
         list-style: none;
         gap: var(--space-xl);
-        flex-wrap: wrap
+        flex-wrap: wrap;
+        padding-left: 0;
     }
 
     .main-nav-list a {
@@ -132,7 +133,7 @@
 
     .hero-image {
         margin-top: var(--space-lg);
-        max-height: 500px;
+        max-height: 600px;
     }
 
     .entrances-image-section figure {
