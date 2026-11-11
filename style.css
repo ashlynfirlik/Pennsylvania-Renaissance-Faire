@@ -197,6 +197,11 @@
         width: 100%;
     }
 
+    .gallery-card h3, .workshop-card h3, .demo-card h3 {
+        margin-block: 0 var(--space-sm);
+        padding: 0;
+    }
+
     .card-image {
         display: flex;
         justify-content: center;
