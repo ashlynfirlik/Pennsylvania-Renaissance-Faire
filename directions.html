@@ -9,6 +9,9 @@
     <meta name="author" content="Ashlyn Firlik">
     <meta name="viewport" content="width=device-width">
     <title>Directions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Metamorphous&display=swap">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -32,10 +35,22 @@
         </section>
         <section class="entrances-image-section">
             <h2>Faire Entrances</h2>
-            <figure>
-                <img src="images/google-maps-view.jpg" alt="Map showing the entrances to the renaissance faire grounds">
-                <figcaption>Placeholder caption for the image</figcaption>
-            </figure>
+            <div class="entrances-layout">
+                <figure class="entrances-map">
+                    <img src="images/entrances-map-1100.jpg"
+                        srcset="images/entrances-map-600.jpg 600w, images/entrances-map-1100.jpg 1100w"
+                        sizes="(min-width: 768px) 60vw, calc(100vw - 2rem)"
+                        alt="Map of the Pennsylvania Renaissance Faire Grounds in Manheim, PA, marking the Main Entrance off Route 72 South and the South Entrance toward Mountain Road."
+                        width="1100"
+                        height="680">
+                    <figcaption>Pennsylvania Renaissance Faire entrancess off PA Route 72 (Manheim, PA).</figcaption>
+                </figure>
+                <div class="entrances-directions">
+                    <h3>Driving Directions</h3>
+                    <p><strong>Main Entrance (PA-72):</strong> Take the PA Turnpike to Exit 266 and head south on Lebanon Road for a quarter mile. Turn east onto the Main Entrance drive.</p>
+                    <p><strong>South Entrance (Mountain Road):</strong> Continue south on PA Route 72 past the Main Entrance for half a mile and turn east onto Mountain Road to reach the South Entrance.</p>
+                </div>
+            </div>
         </section>
         <section class="parking-section">
             <h2>Parking Info & Recommendations</h2>
