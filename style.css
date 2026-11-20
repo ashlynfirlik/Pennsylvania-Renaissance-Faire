@@ -168,6 +168,19 @@
         height: auto;
     }
 
+    .entrances-directions h3 {
+        margin-block-start: 0;
+    }
+
+    .about {
+        width: fit-content;
+        margin-inline: auto;
+    }
+
+    .description {
+        font-size: clamp(var(--font-sm), 2.5vw, var(--font-md));
+    }
+
     .schedule-table {
         background-color: var(--clr-card);
         border: var(--table-border);
