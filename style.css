@@ -95,15 +95,31 @@
         margin-block-end: var(--space-xl);
     }
 
+    .merchant-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-md);
+        margin-block-end: var(--space-xl);
+    }
+
     @media (min-width: 650px) {
         .gallery-grid, .workshop-grid, .demo-grid {
             grid-template-columns: repeat(2, 1fr);
+        }
+
+        .merchant-grid {
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-lg);
         }
     }
 
     @media (min-width: 950px) {
         .gallery-grid, .workshop-grid, .demo-grid {
             grid-template-columns: repeat(3, 1fr);
+        }
+
+        .merchant-grid {
+            grid-template-columns: repeat(4, 1fr);;
         }
     }
 }
@@ -263,6 +279,22 @@
         }
     }
 
+    .merchant-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--clr-card);
+        border: var(--table-border);
+        border-radius: var(--radius-card);
+        padding: 0.75rem var(--space-md);
+    }
+
+    .merchant-card h3 {
+        color: var(--clr-primary);
+        font-size: var(--font-md);
+        margin: 0;
+    }
+
     .ticket-form fieldset, .workshop-form fieldset {
         display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: var(--space-md);
@@ -314,6 +346,11 @@
 
     footer {
         margin: var(--space-xl) 0;
+        text-align: center;
+    }
+
+    footer p {
+        margin-inline: auto;
     }
 
     .form-group-radio {
