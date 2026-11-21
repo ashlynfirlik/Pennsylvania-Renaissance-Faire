@@ -319,6 +319,16 @@
         margin-block-end: var(--space-lg);
     }
 
+    .btn-submit {
+        display: inline-block;
+        padding: var(--space-sm) var(--space-lg);
+        font-family: inherit;
+        font-size: var(--font-sm);
+        border-radius: var(--radius-button);
+        background-color: var(--clr-secondary);
+        color: var(--clr-background);
+    }
+
     @supports (grid-template-columns: subgrid) {
         .form-group-radio {
             display: grid;
