@@ -243,20 +243,34 @@
         display: flex;
     }
 
-    .gallery-card, .workshop-card, .demo-card {
+    .gallery-card, .workshop-card, .demo-card, .merchant-card {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         gap: var(--space-md);
         background-color: var(--clr-card);
+        border: var(--table-border);
         border-radius: var(--radius-card);
-        padding: var(--space-md);
-        width: 100%;
-        height: 100%;
+        padding: 0.75rem var(--space-md);
     }
 
-    .gallery-card h3, .workshop-card h3, .demo-card h3 {
+
+    .gallery-card h3, .workshop-card h3, .demo-card h3, .merchant-card h3 {
         margin-block: 0 var(--space-sm);
         padding: 0;
+        color: var(--clr-primary);
+        font-size: var(--font-md);
+    }
+
+    .merchant-card {
+        display: grid;
+        grid-row: span 2;
+        grid-template-rows: subgrid;
+        align-items: start;
+    }
+
+    .merchant-card h3, .merchant-card p {
+        margin: 0;
     }
 
     .card-image {
@@ -284,22 +298,6 @@
         .card-text {
             flex: 1;
         }
-    }
-
-    .merchant-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-color: var(--clr-card);
-        border: var(--table-border);
-        border-radius: var(--radius-card);
-        padding: 0.75rem var(--space-md);
-    }
-
-    .merchant-card h3 {
-        color: var(--clr-primary);
-        font-size: var(--font-md);
-        margin: 0;
     }
 
     .ticket-form fieldset, .workshop-form fieldset {
