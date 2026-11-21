@@ -22,10 +22,10 @@
     :root {
     --clr-primary: #783f3a;
     --clr-background: #f2e4cd;
-    --clr-secondary: #e6d185;
-    --clr-tertiary: #464d6e;
+    --clr-secondary: #464d6e;
     --clr-card: #e0caaa;
     --clr-text: #423734;
+    --clr-focus: #7a0000;
 
     --font-sm: 1rem;
     --font-md: 1.5rem;
@@ -45,7 +45,9 @@
     --radius-card: 8px;
     --radius-button: 12px;
 
-    --focus-outline: 3px solid var(--clr-secondary);
+    --focus-outline: 3px solid var(--clr-focus);
+    --focus-offset: 2px;
+
 
     --table-border: 1px solid #a59170;
     }
@@ -155,7 +157,7 @@
     .main-nav-list a {
         font-weight: bold;
         font-size: var(--font-md);
-        background: var(--clr-tertiary);
+        background: var(--clr-secondary);
         color: var(--clr-background);
         padding: var(--space-sm) var(--space-md);
     }
@@ -227,7 +229,7 @@
         font-family: inherit;
         font-size: var(--font-md);
         border-radius: var(--radius-button);
-        background-color: var(--clr-tertiary);
+        background-color: var(--clr-secondary);
         color: var(--clr-background);
         margin-top: var(--space-sm);
     }
@@ -422,7 +424,7 @@
         --clr-card: #3d3330;
         --clr-primary: #f5f2ee;
         --clr-text: #f5f2ee;
-        --clr-tertiary: #e6d185;
+        --clr-secondary: #e6d185;
     }
 
     @media (prefers-contrast: more) {
