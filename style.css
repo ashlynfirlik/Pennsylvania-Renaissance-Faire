@@ -78,7 +78,7 @@
 
     a {
         color: var(--clr-primary);
-        text-decoration: none;
+        text-decoration: underline;
     }
 }
 
@@ -160,6 +160,7 @@
         background: var(--clr-secondary);
         color: var(--clr-background);
         padding: var(--space-sm) var(--space-md);
+        text-decoration: none;
     }
 
     .hero-image {
@@ -206,6 +207,11 @@
         font-size: clamp(var(--font-sm), 2.5vw, var(--font-md));
     }
 
+    .table-container {
+        width: 100%;
+        overflow-x: auto;
+    }
+
     .schedule-table {
         background-color: var(--clr-card);
         border: var(--table-border);
@@ -232,6 +238,7 @@
         background-color: var(--clr-secondary);
         color: var(--clr-background);
         margin-top: var(--space-sm);
+        text-decoration: none;
     }
 
     .tix-button-box {
