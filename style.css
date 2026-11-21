@@ -136,6 +136,7 @@
         font-size: var(--font-xl);
         color: var(--clr-primary);
         margin-bottom: 0;
+        text-align: center;
     }
 
     .tagline {
@@ -146,7 +147,7 @@
         display: flex;
         justify-content: center;
         list-style: none;
-        gap: var(--space-xl);
+        gap: clamp(var(--space-md), 4vw, var(--space-xl));
         flex-wrap: wrap;
         padding-left: 0;
     }
@@ -191,6 +192,12 @@
     .about {
         width: fit-content;
         margin-inline: auto;
+    }
+
+    .about-columns {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
     }
 
     .description {
@@ -322,6 +329,10 @@
     @media (min-width: 768px) {
         .entrances-layout {
             grid-template-columns: 1.5fr 1fr;
+        }
+
+        .about-columns {
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 
