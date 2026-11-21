@@ -229,12 +229,13 @@
         border-radius: var(--radius-button);
         background-color: var(--clr-tertiary);
         color: var(--clr-background);
-        margin-top: var(--space-lg);
+        margin-top: var(--space-sm);
     }
 
     .tix-button-box {
         display: flex;
         justify-content: center;
+        margin-block-end: var(--space-xl);
     }
 
     .card-container {
