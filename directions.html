@@ -16,9 +16,8 @@
 </head>
 
 <body>
-    <input type="checkbox" id="theme-toggle">
-    <label for="theme-toggle">Toggle Dark Mode</label>
     <header class="home-header">
+        <a href="#main-content" class="skip-link visually-hidden">Skip to main content</a>
         <h1 class="site-name">Pennsylvania Renaissance Faire</h1>
         <nav class="main-nav" aria-label="Main Site Navigation">
             <ul class="main-nav-list">
@@ -29,8 +28,12 @@
                 <li><a href="faq.html">FAQ</a></li>
             </ul>
         </nav>
+        <div class="darkmode-control">
+            <input type="checkbox" id="theme-toggle">
+            <label for="theme-toggle">Toggle Dark Mode</label>
+        </div>
     </header>
-    <main>
+    <main id="main-content">
         <section>
             <h2>Directions</h2>
             <p class="description">The Pennsylvania Renaissance Faire is located on the grounds of Mount Hope Estate & Winery at 2775 Lebanon Road in Manheim, Pennsylvania. Whether you're coming from the North or South, the Faire is easily accessible via major highways. Reference the guide below to plan your route and choose the best entrance for your trip.</p>

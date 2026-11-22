@@ -16,9 +16,8 @@
 </head>
 
 <body>
-    <input type="checkbox" id="theme-toggle">
-    <label for="theme-toggle">Toggle Dark Mode</label>
     <header class="home-header center-text center-items">
+        <a href="#main-content" class="skip-link visually-hidden">Skip to main content</a>
         <h1 class="site-name">Pennsylvania Renaissance Faire</h1>
         <p class="tagline">Adventure Awaits in The Shire.</p>
         <nav class="main-nav" aria-label="Main Site Navigation">
@@ -30,6 +29,10 @@
                 <li><a href="faq.html">FAQ</a></li>
             </ul>
         </nav>
+        <div class="darkmode-control">
+            <input type="checkbox" id="theme-toggle">
+            <label for="theme-toggle">Toggle Dark Mode</label>
+        </div>
         <div class="hero-image">
             <img src="images/hero-900.webp"
                 srcset="images/hero-600.webp 600w, images/hero-900.webp 900w"
@@ -39,7 +42,7 @@
                 height="550">
         </div>
     </header>
-    <main>
+    <main id="main-content">
         <section class="about section-margin">
             <h2>About</h2>
             <div class="about-columns">

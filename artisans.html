@@ -16,9 +16,8 @@
 </head>
 
 <body>
-    <input type="checkbox" id="theme-toggle">
-    <label for="theme-toggle">Toggle Dark Mode</label>
     <header class="home-header">
+        <a href="#main-content" class="skip-link visually-hidden">Skip to main content</a>
         <h1 class="site-name">Pennsylvania Renaissance Faire</h1>
         <nav class="main-nav" aria-label="Main Site Navigation">
             <ul class="main-nav-list">
@@ -29,8 +28,12 @@
                 <li><a href="faq.html">FAQ</a></li>
             </ul>
         </nav>
+        <div class="darkmode-control">
+            <input type="checkbox" id="theme-toggle">
+            <label for="theme-toggle">Toggle Dark Mode</label>
+        </div>
     </header>
-    <main>
+    <main id="main-content">
         <section>
             <h2>Workshops</h2>
             <p class="description">The Shire offers unique guided workshops where guests can immerse themselves in the crafts of the era and take home their work.</p>

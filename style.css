@@ -433,6 +433,17 @@
     clip-path: rect(0 0 0 0);
     white-space: nowrap;
   }
+
+  .skip-link:focus-visible {
+    position: fixed;
+    inline-size: auto;
+    block-size: auto;
+    clip: auto;
+    clip-path: none;
+    overflow: visible;
+    text-decoration: none;
+    color: var(--clr-text);
+  }
 }
 
 @layer overrides {
