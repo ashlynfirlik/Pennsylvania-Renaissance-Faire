@@ -224,6 +224,13 @@
         padding: var(--space-md);
     }
 
+    .schedule-table th {
+        color: var(--clr-primary);
+        font-weight: bold;
+        padding: var(--space-md);
+        border-bottom: var(--table-border);
+    }
+
     .schedule-table td {
         padding: var(--space-md);
         border-bottom: var(--table-border);
